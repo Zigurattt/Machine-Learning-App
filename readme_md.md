@@ -1,4 +1,7 @@
 # 🧠 Machine Learning Platform
+
+A modern and interactive machine learning development platform. An educational tool that visualizes three key ML extensions, built using React and Recharts.
+
 ``bash
 npm install
 # or
