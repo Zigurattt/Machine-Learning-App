@@ -1,175 +1,156 @@
-# 🧠 Makine Öğrenmesi Platformu
-
-Modern ve interaktif makine öğrenmesi algoritmaları platformu. React ve Recharts kullanılarak geliştirilmiş, üç temel ML algoritmasını görselleştiren eğitim aracı.
-
-![Proje Screenshot](screenshot.png)
-
-## ✨ Özellikler
-
-### 🎯 Algoritmalar
-- **Doğrusal Regresyon** - Sürekli değişkenler arası ilişki modellemesi
-- **Sınıflandırma** - İki sınıflı veri noktalarını ayırma
-- **K-Means Kümeleme** - Benzer verileri 4 kümeye gruplama
-
-### 🎨 Görsel Özellikler
-- **Gerçek zamanlı görselleştirme** - Canlı grafikler ve animasyonlar
-- **İnteraktif eğitim süreci** - Tek tıkla model eğitimi
-- **Performans metrikleri** - R², Doğruluk ve Silhouette skorları
-- **Modern UI/UX** - Gradient tasarım ve smooth animasyonlar
-
-### 📊 Veri Setleri
-- Otomatik veri üretimi
-- Her algoritma için özel veri setleri
-- 100-200 veri noktası ile test
-
-## 🚀 Kurulum
-
-### Gereksinimler
-- Node.js (v14 veya üzeri)
-- npm veya yarn
-
-### Adımlar
-
-1. **Projeyi klonlayın**
-```bash
-git clone https://github.com/yourusername/makine-ogrenmesi-platformu.git
-cd makine-ogrenmesi-platformu
-```
-
-2. **Bağımlılıkları yükleyin**
-```bash
+# 🧠 Machine Learning Platform
+``bash
 npm install
-# veya
+# or
 yarn install
 ```
 
-3. **Geliştirme sunucusunu başlatın**
-```bash
+3. **Start the development server**
+``bash
 npm start
-# veya
+# or
 yarn start
 ```
 
-4. **Tarayıcıda açın**
+4. **Open in browser**
 ```
 http://localhost:3000
 ```
 
-## 📁 Proje Yapısı
+## 📁 Project Structure
 
 ```
-makine-ogrenmesi-platformu/
+machine-learning-platform/
 ├── public/
-│   ├── index.html
-│   ├── favicon.ico
-│   └── manifest.json
+│ ├── index.html
+│ ├── favicon.ico
+│ └── manifest.json
 ├── src/
-│   ├── components/
-│   │   └── MLProject.js          # Ana uygulama komponenti
-│   ├── App.js                    # Ana uygulama
-│   ├── App.css                   # Stil dosyası
-│   └── index.js                  # Giriş noktası
+│ ├── components/
+│ │ │ └── MLProject. js # Main application component
+│ ├── App.js # Main application
+│ ├── App.css # Style file
+│ └─── index.js # Entry point
 ├── package.json
 ├── README.md
 └── tailwind.config.js
 ```
 
-## 🛠️ Kullanılan Teknolojiler
+## 🛠️ Technologies Used
 
 - **React** - Frontend framework
-- **Recharts** - Veri görselleştirme
-- **Lucide React** - Modern ikonlar
+- **Recharts** - Data visualization
+- **Lucide React** - Modern icons
 - **Tailwind CSS** - Utility-first CSS framework
 - **JavaScript ES6+** - Modern JavaScript
 
-## 📈 Algoritma Detayları
+## 📈 Algorithm Details
 
-### Doğrusal Regresyon
-- **Yöntem**: En küçük kareler
-- **Metrik**: R² (Determinasyon katsayısı)
-- **Kullanım**: Sürekli değişken tahmini
+### Linear Regression
+- **Method**: Least squares
+- **Metric**: R² (coefficient of determination)
+- **Usage**: Continuous variable estimation
 
-### Sınıflandırma
-- **Yöntem**: Basit threshold tabanlı
-- **Metrik**: Doğruluk (Accuracy)
-- **Kullanım**: İkili sınıflandırma
+### Classification
+- Method**: Simple threshold based
+- **Metric**: Accuracy
+- **Use**: Binary classification
 
-### K-Means Kümeleme
-- **Yöntem**: Centroid tabanlı kümeleme
-- **Metrik**: Silhouette skoru
-- **Kullanım**: Denetimsiz öğrenme
+### K-Means Clustering
+- **Method**: Centroid-based clustering
+- **Metric**: Silhouette score
+- **Usage**: Unsupervised learning
 
-## 🎮 Nasıl Kullanılır
+## 🎮 How to Use
 
-1. **Algoritma Seçin**: Üst menüden istediğiniz algoritmayı seçin
-2. **Veriyi İnceleyin**: Otomatik üretilen veri setini görüntüleyin
-3. **Modeli Eğitin**: "Modeli Eğit" butonuna tıklayın
-4. **Sonuçları Görün**: Gerçek zamanlı grafikler ve performans skorları
+1. **Select Algorithm**: Select the desired algorithm from the top menu
+2. **Examine Data**: View the auto-generated data set
+3. **Train Model**: Click on the "Train Model" button
+4. **See Results**: Real-time graphs and performance scores
 
-## 🔧 Geliştirme
+## 🔧 Development
 
-### Yeni Algoritma Ekleme
-```javascript
-// src/components/MLProject.js içinde
+### Adding a New Algorithm
+``javascript
+// in src/components/MLProject.js
 const trainNewAlgorithm = (data) => {
-  // Algoritma implementasyonu
-  return model;
+ // Algorithm implementation
+ return model;
 };
 ```
 
-### Yeni Metrik Ekleme
-```javascript
+### Adding New Metric
+``javascript
 const calculateNewMetric = (predictions, actual) => {
-  // Metrik hesaplama
-  return score;
+ // Metric calculation
+ return score;
 };
 ```
 
-## 📊 Performans
+## 📊 Performance
 
-- **Eğitim Süresi**: ~2 saniye (simülasyon)
-- **Veri İşleme**: 100-200 nokta gerçek zamanlı
-- **Responsive**: Mobil ve desktop uyumlu
+- **Training Duration**: ~2 seconds (simulation)
+- **Data Processing**: 100-200 points real-time
+- **Responsive**: Mobile and desktop compatible
+- 
+## 🛠️ Technologies Used
 
-## 🤝 Katkıda Bulunma
+- **React** - Frontend framework
+- **Recharts** - Data visualization
+- **Lucide React** - Modern icons
+- **Tailwind CSS** - Utility-first CSS framework
+- **JavaScript ES6+** - Modern JavaScript
 
-1. Fork edin
-2. Feature branch oluşturun (`git checkout -b feature/AmazingFeature`)
-3. Değişikliklerinizi commit edin (`git commit -m 'Add some AmazingFeature'`)
-4. Branch'inizi push edin (`git push origin feature/AmazingFeature`)
-5. Pull Request açın
+## 📈 Algorithm Details
 
-## 🐛 Bilinen Sorunlar
+### Linear Regression
+- **Method**: Least squares
+- **Metric**: R² (coefficient of determination)
+- **Usage**: Continuous variable estimation
 
-- [ ] Büyük veri setlerinde performans optimizasyonu
-- [ ] Mobil cihazlarda grafik boyutlandırma
-- [ ] Safari'de animasyon uyumluluğu
+### Classification
+- Method**: Simple threshold based
+- **Metric**: Accuracy
+- **Use**: Binary classification
 
-## 📋 Yapılacaklar
+### K-Means Clustering
+- **Method**: Centroid-based clustering
+- **Metric**: Silhouette score
+- **Usage**: Unsupervised learning
 
-- [ ] Neural Network algoritması
-- [ ] CSV dosya yükleme
-- [ ] Model kaydetme/yükleme
-- [ ] Algoritma karşılaştırma
-- [ ] Daha fazla veri seti seçeneği
-- [ ] Parametre ayarlama paneli
+## 🎮 How to Use
 
-## 📄 Lisans
+1. **Select Algorithm**: Select the desired algorithm from the top menu
+2. **Examine Data**: View the auto-generated data set
+3. **Train Model**: Click on the "Train Model" button
+4. **See Results**: Real-time graphs and performance scores
 
-Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakın.
+## 🔧 Development
 
-## 📞 İletişim
+### Adding a New Algorithm
+``javascript
+// in src/components/MLProject.js
+const trainNewAlgorithm = (data) => {
+ // Algorithm implementation
+ return model;
+};
+```
 
-- **Proje Linki**: [https://github.com/yourusername/makine-ogrenmesi-platformu](https://github.com/yourusername/makine-ogrenmesi-platformu)
-- **Demo**: [Live Demo](https://your-demo-link.com)
+### Adding New Metric
+``javascript
+const calculateNewMetric = (predictions, actual) => {
+ // Metric calculation
+ return score;
+};
+```
 
-## 🙏 Teşekkürler
+## 📊 Performance
 
-- [React](https://reactjs.org/) - Frontend framework
-- [Recharts](https://recharts.org/) - Görselleştirme kütüphanesi
-- [Tailwind CSS](https://tailwindcss.com/) - CSS framework
-- [Lucide](https://lucide.dev/) - İkon kütüphanesi
+- **Training Duration**: ~2 seconds (simulation)
+- **Data Processing**: 100-200 points real-time
+- **Responsive**: Mobile and desktop compatible
 
----
 
-⭐ Eğer bu proje işinize yaradıysa, yıldız vermeyi unutmayın!
+⭐ If you like and use the project dont forget get me a star :)!
+Best Regards 
+Mert Hamza Yilmaz
